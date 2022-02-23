@@ -1,0 +1,50 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions * {
+    display: flex;
+}
+
+.actions  * > * {
+    flex: 1;
+}
+
+.txt {
+    text-align: center;
+}
+
+.ui.dropdown.fluid.primary.button.center, ui.fluid.button.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.css-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."; 
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+@media screen and (max-width: 720px) {
+    .actions {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .css-grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 10px 20px; 
+        grid-template-areas: 
+        ". . ."; 
+    }
+}
